@@ -1,0 +1,87 @@
+$color-1: #ffffff
+$color-g: #00ff00
+$color-r: #ff0000
+$color-y: #505050
+$font-lora: Lora, sans-serif
+$font-montserrat: Montserrat, sans-serif
+$primary-color: #333
+
+*
+  margin: 0
+
+html, body
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+
+h2, h3, h4, h5, h6, p
+  margin-bottom: 20px
+
+.logotip
+  display: inline
+  position: fixed
+  top: 7px
+  left: 20px
+
+nav
+  position: fixed
+  height: 70px
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 100
+
+  & ul::after
+    content: ""
+    display: inline-block
+    width: 120px
+
+.nav_bar
+  display: block
+
+  // height: 5%
+  background-color: rgba(0, 0, 0, 0.2)
+  color: rgba(256, 256, 256, 1)
+  text-align: right
+
+  @extend .funky
+
+.nav_bar_li
+  display: inline-block
+  padding: 0 20px
+
+.nav_bar_a
+  text-decoration: none
+  color: $color-1
+  display: inline-block
+
+.sect
+  height: 100%
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+
+.section2,
+.section4,
+.section6
+  height: 50%
+
+.funky
+  font:
+    family: fantasy
+    size: 1.8em
+    weight: bold
+  line-height: 1.7em
+
+.sectOne
+  background-image: url(../img/img_read_1.jpg)
+
+.sectTwo
+  background-image: url(../img/img_read_2.jpg)
+
+.sectThree
+  background-image: url(../img/img_read_3.jpg)
+
+.sectFour
+  background-image: url(../img/img_read_4.jpg)
